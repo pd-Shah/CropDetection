@@ -1,0 +1,464 @@
+/*
+*
+* Main CSS
+*
+*
+*/
+
+/* Fonts */
+@font-face {
+    font-family: IRANSansWeb;
+    src: url('../fonts/iransans/eot/IRANSansWeb(FaNum).eot');  /* IE9 Compat Modes */
+    src: url('../fonts/iransans/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iransans/woff2/IRANSansWeb(FaNum).woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/iransans/woff/IRANSansWeb(FaNum).woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/iransans/ttf/IRANSansWeb(FaNum).ttf') format('truetype');           /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'b titr';
+    src: url('../fonts/TitrWeb.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Main */
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+body {
+    font-family: IRANSansWeb !important;
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.vertical-space {
+    margin: 30px 0;
+}
+
+body .mr-auto, .mx-auto {
+    margin-left: auto !important;
+    margin-right: inherit !important;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.city-title {
+    margin-bottom: 50px !important;
+    direction: rtl;
+}
+
+.nav {
+    padding-right: 0 !important;
+    margin-left: 15px;
+}
+
+.navbar {
+    padding: 0 1rem !important;
+    direction: rtl;
+    align-items: normal !important;
+    width: 100%;
+    z-index: 100;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 45%, rgba(255, 255, 255, 0.26) 45%, rgba(0, 0, 0, 0.09) 55%, rgba(0, 0, 0, 0) 0);
+    background-size: 6px 6px;
+}
+
+.navbar .navbar-toggle {
+    margin-left: 2rem;
+    display: inline-block;
+    padding: 15px;
+}
+
+.navbar-toggle:hover {
+    background: rgba(37, 129, 247, 0.3);
+    color: #DDEAFF;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.navbar-toggle i {
+    font-size: 28px;
+}
+
+.navbar.bg-green {
+    background-color: rgb(52, 73, 94);
+    margin-bottom: 24px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.nav-link {
+    padding: 1rem 1rem !important;
+}
+.nav-pills .nav-link {
+    color: #004085;
+}
+
+.nav-item.active {
+    background: rgba(37, 129, 247, 0.3);
+    color: #DDEAFF;
+}
+
+.navbar-top-links .dropdown-user {
+    left: 0;
+    right: auto;
+}
+
+.navbar-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    background-color: #34495e !important;
+    right: 0 !important;
+    left: inherit !important;
+    margin: 0 !important;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 45%, rgba(255, 255, 255, 0.26) 45%, rgba(0, 0, 0, 0.09) 55%, rgba(0, 0, 0, 0) 0);
+    background-size: 6px 6px;
+}
+
+.dropdown-item {
+    text-align: right !important;
+    padding: .5rem 1.5rem !important;
+}
+
+.dropdown-item:hover {
+    background: rgba(37, 129, 247, 0.3) !important;
+    color: #DDEAFF !important;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.navbar-nav {
+    padding-right: 0;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+}
+
+.table {
+    direction: rtl;
+    text-align: center;
+}
+.table-bordered thead tr:first-child {
+    background-color: rgba(0, 0, 0, .05);
+}
+th {
+    text-align: center !important;
+}
+.herbalparam  .table-bordered thead tr:first-child {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+.herbalparam th {
+    font-size: 20px;
+}
+#map {
+    border: solid 2px #527c7e;
+}
+
+#IranMap .map .province .qazvin,
+#IranMap .map .province .khorasan-razavi,
+#IranMap .map .province .ardabil,
+#IranMap .map .province .hamadan,
+#khorasan-razavi-map .map .province .davarzan,
+#khorasan-razavi-map .map .province .firuzeh,
+#khorasan-razavi-map .map .province .joghatay,
+#khorasan-razavi-map .map .province .jovein,
+#khorasan-razavi-map .map .province .taybad,
+#khorasan-razavi-map .map .province .roshtkhar,
+#khorasan-razavi-map .map .province .khalilabad,
+#khorasan-razavi-map .map .province .bakharz,
+#khorasan-razavi-map .map .province .binalud,
+#khorasan-razavi-map .map .province .fariman,
+#khorasan-razavi-map .map .province .kalat,
+#khorasan-razavi-map .map .province .khoshab,
+#khorasan-razavi-map .map .province .mahvelat,
+#khorasan-razavi-map .map .province .sarakhs,
+#khorasan-razavi-map .map .province .zaveh,
+#khorasan-razavi-map .map .province .ghuchan,
+#khorasan-razavi-map .map .province .bajestan,
+#khorasan-razavi-map .map .province .chenaran,
+#khorasan-razavi-map .map .province .dargaz,
+#khorasan-razavi-map .map .province .gonabad,
+#khorasan-razavi-map .map .province .kashmar,
+#khorasan-razavi-map .map .province .khaf,
+#khorasan-razavi-map .map .province .neyshabour,
+#khorasan-razavi-map .map .province .torbateheydariyeh,
+#khorasan-razavi-map .map .province .bardscan,
+#khorasan-razavi-map .map .province .mashhad,
+#khorasan-razavi-map .map .province .sabzvar,
+#khorasan-razavi-map .map .province .torbatejam,
+#ardabil-map .map .province .bilesavar,
+#ardabil-map .map .province .germi,
+#ardabil-map .map .province .khalkhal,
+#ardabil-map .map .province .parsabad,
+#ardabil-map .map .province .sarein,
+#ardabil-map .map .province .ardabiil,
+#ardabil-map .map .province .givi,
+#ardabil-map .map .province .meshginshahr,
+#ardabil-map .map .province .nir,
+#ardabil-map .map .province .namin,
+#qazvin-map .map .province .qazvin,
+#qazvin-map .map .province .takestan,
+#qazvin-map .map .province .alborz,
+#qazvin-map .map .province .abyek,
+#qazvin-map .map .province .buinzahra,
+#hamadan-map .map .province .hamedan,
+#hamadan-map .map .province .kabodarahang,
+#hamadan-map .map .province .razan,
+#herbal-IranMap .map .province .qazvin,
+#herbal-IranMap .map .province .ardabil,
+#herbal-IranMap .map .province .khuzestan,
+#ardabil-map .map .province .heparsabad,
+#qazvin-map .map .province .heqazvin,
+#disease-IranMap .map .province .ardabil,
+#disease-IranMap .map .province .golestan {
+    fill: #2d4e0a;
+}
+
+#IranMap .map .province .khuzestan,
+#IranMap .map .province .azerbaijan-west,
+#IranMap .map .province .isfahan,
+#IranMap .map .province .fars,
+#IranMap .map .province .golestan {
+    fill: #379801;
+}
+
+#IranMap .list li ul li a.is-active,
+#IranMap .list li ul li #khorasan-razavi.is-active {
+    background: #2d4e0a;
+    fill: #2d4e0a;
+}
+
+#IranMap .map .province path.is-active {
+    fill: #2d4e0a;
+    background: #2d4e0a;
+}
+
+.IranMap {
+    background-color: #111;
+    height: 100%;
+    width: 328px;
+    float: right;
+}
+
+.container-fluid #khorasan-razavi,
+.container-fluid #qazvin {
+    right: 332px !important;
+}
+
+.container-fluid .list.hidden {
+    display: none;
+}
+
+.list-group {
+    margin-bottom: 30px;
+}
+
+.list-group-item.title {
+    background-color: #527c7e;
+    border: none;
+    color: #fff;
+}
+
+.list-group-item.active {
+    background-color: rgba(82, 124, 126, 0.3);
+    border-color: #6b9820;
+    color: #495057;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.list-group-item {
+    border-radius: 0;
+}
+
+.all-badge {
+    height: 18px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.fa.fa-globe {
+    vertical-align: middle;
+}
+
+#slider {
+    margin: 10px;
+    position: absolute;
+    cursor: pointer;
+    left: 123px;
+    top: 30px;
+    z-index: 999;
+}
+
+.list-group-item-action:hover {
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.footer {
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(52, 73, 94);;
+    font-family: IRANSansWeb;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    margin-top: 15px;
+}
+
+.footer .now-date {
+    float: right;
+}
+
+.footer .last-date {
+    float: left;
+}
+
+clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* Modal*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 500px;
+    max-width: 500px;
+    background-color: transparent !important;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.khorasan-razavi-close,
+.qazvin-close,
+.hamadan-close,
+.ardabil-close,
+.golestan-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.khorasan-razavi-close:hover,
+.qazvin-close:hover,
+.hamadan-close:hover,
+.ardabil-close:hover,
+.golestan-close:hover,
+.khorasan-razavi-close:focus,
+.qazvin-close:focus,
+.hamadan-close:focus,
+.ardabil-close:focus,
+.golestan-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.notfound-page {
+    margin-top: 100px;
+}
+
+.notfound-page h1 {
+    margin-top: 30px;
+}
+
+.notfound-page,
+.notfound-page h1,
+.notfound-page p {
+    text-align: center;
+}
+
+.herbalparam .nav {
+    text-align: center;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.herbalparam .tab-content {
+    text-align: right;
+}

@@ -1,0 +1,22 @@
+{% extends "cropdetection/cropdetection_base.html" %}
+
+{% block content %}
+    {{ region.name }}
+
+    <hr>
+
+    {% for analyze in region.analyze_set.all %}
+      <ul>
+        <li>
+          <a href="{% url 'cropdetection:analyze_detail' analyze.id %}">
+            {{ analyze.id}}
+          </a>
+        </li>
+        <li>{{ analyze.date }}</li>
+        {% if  analyze.result %}
+        <li><a href="{{ analyze.get_result_path }}"> result </a></li>
+        {% endif %}
+        <hr>
+      </ul>
+    {% endfor %}
+{% endblock %}

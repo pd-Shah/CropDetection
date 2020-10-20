@@ -1,0 +1,7 @@
+{% extends "cropdetection/cropdetection_base.html" %}
+
+{% block content %}
+  {% for region in region_list %}
+    {{ region.name }}
+  {% endfor%}
+{% endblock %}

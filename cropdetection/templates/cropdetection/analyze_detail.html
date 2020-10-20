@@ -1,0 +1,12 @@
+{% extends "cropdetection/cropdetection_base.html" %}
+
+{% block content %}
+<ul>
+  <li>{{analyze.region}}</li>
+  <li>{{analyze.date}}</li>
+  {% if  analyze.result %}
+  <li><a href="{{ analyze.get_result_path }}"> result </a></li>
+  {% endif %}
+  <li>{{analyze.input_path}}</li>
+</ul>
+{% endblock %}

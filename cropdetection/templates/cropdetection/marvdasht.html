@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" type="image/x-icon" href="{% static 'cropdetection/images/favicon.ico' %}">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'cropdetection/css/style.css' %}">
+
+  <!-- Iran Map core CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'cropdetection/css/iranmap.css' %}">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'cropdetection/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'cropdetection/css/bootstrap-rtl.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'cropdetection/css/bootstrap-magnify.css' %}">
+
+  <!-- Font awasome CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'cropdetection/css/font-awesome.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'cropdetection/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'cropdetection/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'cropdetection/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'cropdetection/css/marvdasht.csv' %}">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg  navbar-fixed-top bg-green">
+      <div class="navbar" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="navbar-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href=""><i class="fa fa-user fa-fw"></i> سامانه پارامترهای کمی گیاهی</a>
+              <a class="dropdown-item" href=""><i class="fa fa-user fa-fw"></i> سامانه برآورد سطح زیر کشت</a>
+              <a class="dropdown-item" href=""><i class="fa fa-user fa-fw"></i> سامانه تشخیص بیماریهای گیاهی</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i> پروفایل کاربر</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-gear fa-fw"></i> تنظیمات</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href=""><i class="fa fa-sign-out fa-fw"></i> خروج</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <span class="nav-link navbar-title" href="index.html"></span>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <span class="nav-link" href="index.html">
+                            <i class="fa fa-lg fa-check-circle-o" id="menu-icon"></i>&nbsp;خوش آمدید&nbsp;
+                        </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div id="IranMap" class="clear text-center">
+            <div class="map">
+              <span class="show-title"></span>
+
+              <div id="mashhad" class="container-fluid">
+                <div class="row">
+                  <!-- end col-6 -->
+                  <div class="col-3">
+                    <div class="owl-carousel owl-theme">
+                      <img src="{% static 'cropdetection/images/mashhad1.png'%}" alt="mashhad1" class="img-thumbnail img-fluid" data-toggle="magnify" />
+                      <img src="{% static 'cropdetection/images/mashhad2.png' %}" alt="mashhad2" class="img-thumbnail img-fluid" data-toggle="magnify" />
+
+                    </div>
+                  </div>
+                  <!-- end col-6 -->
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- end container -->
+</body>
+<!-- Core JS -->
+<script type="text/javascript" src="{% static 'cropdetection/js/jquery-3.2.1.min.js' %}"></script>
+
+<!-- Bootstrap core JS -->
+<script type="text/javascript" src="{% static 'cropdetection/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'cropdetection/js/bootstrap-magnify.min.js' %}"></script>
+
+<!-- Chart JS -->
+<script src="{% static 'cropdetection/js/Chart.bundle.js' %}"></script>
+<script src="{% static 'cropdetection/js/utils.js' %}"></script>
+
+<!-- Iran Map core JS -->
+<script type="text/javascript" src="{% static 'cropdetection/js/iranmap.js' %}"></script>
+
+<!-- Custom Js-->
+<script type="text/javascript" src="{% static 'cropdetection/js/custom.js' %}"></script>
+
+<script src="{% static 'cropdetection/js/owl.carousel.js' %}"></script>
+
+</html>
